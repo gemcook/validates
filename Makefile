@@ -14,3 +14,9 @@ prepublish:
 
 	yarn run build:flow-gen
 #	cp ./flow-typed/index.js.flow ./lib/index.js.flow
+
+build:
+	yarn run build-storybook
+
+publish:
+	yarn publish --access public
