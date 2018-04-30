@@ -1,6 +1,6 @@
 {
   "name": "@gemcook/validates",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "repository": "https://github.com/gemcook/validates.git",
@@ -49,6 +49,5 @@
     "build:es": "babel src --out-dir lib",
     "prepublish": "make prepublish"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
