@@ -15,13 +15,14 @@ export default function validatePassword(
   },
 ) {
   const rule = new RegExp(
-    `^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?d)[a-zA-Zd]{${String(options.min)},${String(
-      options.max,
-    )}$`,
+    `^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[\\d])[a-zA-Z\\d]{${String(
+      options.min,
+    )},${String(options.max)}}$`,
   );
+
   if (!values[options.key] && options.require) {
     errors[options.key] = 'パスワードを入力してください';
-  } else if (values[options.key].length < 8) {
+  } else if (values[options.key].length < options.min) {
     errors.password = `パスワードは${String(
       options.min,
     )}文字以上で入力してください`;
