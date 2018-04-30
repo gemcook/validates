@@ -15,6 +15,6 @@ export default function validateConfirmPassword(
   if (!values[options.key] && options.require) {
     errors[options.key] = '確認用のパスワードを入力してください';
   } else if (values[options.key] !== values[options.keyPassword]) {
-    errors[options.key] = 'よく確認してうちなおせ';
+    errors[options.key] = 'パスワードが一致していません';
   }
 }
