@@ -1,6 +1,6 @@
 {
   "name": "@gemcook/validates",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "repository": "https://github.com/gemcook/validates.git",
