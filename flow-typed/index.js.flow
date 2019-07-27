@@ -1,9 +1,0 @@
-// @flow
-
-declare export function validateCode(errors: Object, values: Object, options?: {key?: string, require: boolean}): void;
-declare export function validateConfirmPassword(errors: Object, values: Object, options?: {key?: string, keyPassword?: string, require?: boolean}): void;
-declare export function validateEmail(errors: Object, values: Object, options?: {key?: string, require?: boolean}): void;
-declare export function validatePassword(errors: Object, values: Object, options?: {key?: string, max?: number, min?: number, require?: boolean}): void;
-declare export function validateRequire(errors: Object, values: Object, key: string): void;
-declare export function validateTerms(errors: Object, values: Object, options?: {key?: string}): void;
-declare export function validateUsername(errors: Object, values: Object, options?: {key?: string, require: boolean}): void;
