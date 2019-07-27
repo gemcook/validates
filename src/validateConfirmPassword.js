@@ -10,7 +10,7 @@ export default function validateConfirmPassword(
     key: 'confirmPassword',
     require: true,
     keyPassword: 'password',
-  },
+  }
 ) {
   if (!values[options.key] && options.require) {
     errors[options.key] = '確認用のパスワードを入力してください';

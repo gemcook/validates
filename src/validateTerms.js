@@ -6,7 +6,7 @@ export default function validateTerms(
     key?: string,
   } = {
     key: 'terms',
-  },
+  }
 ) {
   if (!values[options.key]) {
     errors[options.key] = '利用規約に同意されていません';

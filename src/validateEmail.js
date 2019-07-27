@@ -8,7 +8,7 @@ export default function validateEmail(
   } = {
     key: 'email',
     require: true,
-  },
+  }
 ) {
   if (!values[options.key] && options.require) {
     errors[options.key] = 'メールアドレスを入力してください';

@@ -12,19 +12,19 @@ export default function validatePassword(
     require: true,
     min: 8,
     max: 50,
-  },
+  }
 ) {
   const rule = new RegExp(
     `^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[\\d])[a-zA-Z\\d]{${String(
-      options.min,
-    )},${String(options.max)}}$`,
+      options.min
+    )},${String(options.max)}}$`
   );
 
   if (!values[options.key] && options.require) {
     errors[options.key] = 'パスワードを入力してください';
   } else if (values[options.key].length < options.min) {
     errors.password = `パスワードは${String(
-      options.min,
+      options.min
     )}文字以上で入力してください`;
   } else if (!rule.test(values.password)) {
     errors[options.key] = 'パスワードに大文字・小文字・数字を含んでください';

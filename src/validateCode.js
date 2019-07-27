@@ -8,7 +8,7 @@ export default function validateCode(
   } = {
     key: 'code',
     require: true,
-  },
+  }
 ) {
   if (!values[options.key] && options.require) {
     errors[options.key] = '認証コードを入力してください';
