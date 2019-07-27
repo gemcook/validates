@@ -33,11 +33,6 @@ export default [
       }),
       commonjs({
         include: 'node_modules/**',
-        namedExports: {
-          'node_modules/amazon-cognito-auth-js/dist/amazon-cognito-auth.js': [
-            'CognitoAuth',
-          ],
-        },
       }),
       babel({
         runtimeHelpers: true,
